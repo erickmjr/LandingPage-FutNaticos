@@ -10,3 +10,21 @@ body {
 .custom-img {
     width: 800px;
 }
+
+.detalhes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+    border: none;
+    color: black;
+}
+
+.player {
+    aspect-ratio: 16 / 9;
+    width: 40vw;
+}
+
+#gols {
+    background-color: rgb(180, 216, 180);
+}
