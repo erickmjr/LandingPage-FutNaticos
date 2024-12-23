@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#transferencias" class="nav-link fw-bold">
+                        <a href="#transferencias" class="nav-link fw-bold cursor-pointer">
                             <i class="fa-solid fa-handshake"></i>
                             Transferências 
                         </a>
@@ -40,7 +40,7 @@
                             Gols 
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a href="#newsLetter" class="nav-link fw-bold">
                             <i class="bi bi-envelope"></i>
                             NewsLetter 
@@ -395,26 +395,61 @@
                 <div class="col-12 col-md-4 col-lg-4 py-4 my-2 bg-dark text-light rounded text-center d-flex flex-column align-items-center" id="cadastro">
                     <h4>Cadastre-se</h4>
 
-                    <form class="d-flex flex-column gap-2">
+                    <span class="bar w-50 bg-light"></span>
+                    
+                    <form class="d-flex flex-column gap-2 mt-3" id="form">
+
                         <div class="d-flex flex-column gap-0">
                             <label for="name" class="form-label text-center">
                                 Nome
                             </label>
-                            <input type="name" id="name" class="form-control text-center" placeholder="Digite seu nome" required>
+                            <input type="text" id="name" name="name" class="form-control text-center" placeholder="Digite seu nome">
                         </div>
+                        
+                        <span class="bar w-100 bg-light"></span>
 
                         <div>
                             <label for="email" class="form-label text-center">
                                 E-mail
                             </label>
-                            <input type="email" id="email" class="form-control text-center" placeholder="Digite seu e-mail" required>
+                            <input type="email" id="email" name="email" class="form-control text-center" placeholder="Digite seu e-mail">
                         </div>
 
+                        <span class="bar w-100 bg-light"></span>
+
                         <div class="text-center p-0 m-0">
-                            <label for="telephone" class="form-label text-center">
+                            <label for="telephone" name="telephone" class="form-label text-center">
                                 Telefone (Opcional)
                             </label>
                             <input type="tel" id="telephone" class="form-control text-center" placeholder="Digite seu telefone">
+                        </div> 
+
+                        <div class="mt-3">
+                            <button class="btn btn-success w-100" id="form-button" type="submit">
+                                Enviar
+                            </button>
+                        </div>
+
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3 text-light rounded">
+
+                            <div class="toast bg-dark text-light" data-bs-autohide="true" id="registerMessage">
+
+                                <header class="toast-header justify-content-between">
+                                    <strong>
+                                        Cadastro realizado!
+                                    </strong>
+                                </header>
+
+                                <div class="toast-body text-start">
+                                    Agradecemos por assinar nossa NewsLetter!
+                                    <div class="mt-2 pt-2 border-top text-start">
+                                        <button class="btn btn-danger" data-bs-dismiss="toast" type="button">
+                                            <i class="bi bi-x-circle"></i>
+                                            Fechar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -423,8 +458,8 @@
     </div>
 
     <footer class="bg-dark text-light m-0 p-2">
-            <p class="text-center">
-                erickmjr
+            <p class="text-center m-0 p-0 cursor-pointer">
+                <a href="https://github.com/erickmjr/LandingPage-FutNaticos" target="_blank" class="text-decoration-underline text-light ">erickmjr</a>
                 <i class="bi bi-github"></i>
             </p>
         </footer>
@@ -440,5 +475,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/localization/messages_pt_BR.min.js"></script>
 
+    <script src="main.js"></script>
 </body>
 </html>
