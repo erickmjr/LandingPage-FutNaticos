@@ -71,10 +71,6 @@ section#transferencias {
     width: 40vw;
 }
 
-form input {
-    max-width: fit-content;
-}
-
 span.bar {
     background-color: black;
     width: 60%;
@@ -89,6 +85,12 @@ section#newsLetter{
 #cadastro h4 {
     font-weight: 600;
 }
+
+.error {
+    font-size: 1vw;
+}
+
+
 
 @media (min-width: 400px) and (max-width: 767px) {
     #container-gols {
