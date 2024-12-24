@@ -1,6 +1,16 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    --fontePrincipal: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -9,10 +19,42 @@ html {
 
 body {
     overflow-x: hidden;
+    font-family: var(--fontePrincipal);
+}
+
+header {
+    background-color: white;
+}
+
+header h1{
+    font-family: var(--fontePrincipal);
+    font-weight: 800;
+    color: rgb(30, 50, 1);
+}
+
+
+#menu-navegacao .nav-item a{
+    font-family: var(--fontePrincipal);
+    font-weight: 400;
+    color: rgb(30, 50, 1);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#menu-navegacao .nav-link.active {
+    background-color: rgb(30, 50, 1);
+    color: white;
 }
 
 .custom-img {
     width: 800px;
+}
+
+section h2{
+    font-weight: 800;
+}
+
+section#transferencias {
+    background-color: rgb(30, 50, 1);
 }
 
 .detalhes {
@@ -29,10 +71,6 @@ body {
     width: 40vw;
 }
 
-#gols {
-    background-color: rgb(180, 216, 180);
-}
-
 form input {
     max-width: fit-content;
 }
@@ -44,7 +82,15 @@ span.bar {
     border-radius: 12px;
 }
 
-@media (min-width: 577px) and (max-width: 767px) {
+section#newsLetter{
+    background-image: linear-gradient(to bottom, white, #2125293f);
+}
+
+#cadastro h4 {
+    font-weight: 600;
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
     #container-gols {
         text-align: center;
     }
@@ -56,6 +102,11 @@ span.bar {
     .player {
         width: 100%;
     }
+
+    section#newsLetter h2 {
+        font-size: 6.25vw !important; 
+    }
+
 }
 
 
