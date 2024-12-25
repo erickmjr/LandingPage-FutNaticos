@@ -90,9 +90,15 @@ section#newsLetter{
     font-size: 1vw;
 }
 
+.newsletter-title {
+    font-size: 2rem;
+}
 
+.newsletter-subtitle {
+    font-size: 1.25rem; 
+}
 
-@media (min-width: 400px) and (max-width: 767px) {
+@media (min-width: 240px) and (max-width: 767px) {
     #container-gols {
         text-align: center;
     }
@@ -105,14 +111,18 @@ section#newsLetter{
         width: 100%;
     }
 
-    section#newsLetter h2 {
-        font-size: 6.25vw !important; 
+    .error {
+        font-size: 3vw;
+    }
+
+    .newsletter-title {
+        font-size: 1.55rem; 
     }
 
 }
 
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1025px) {
     #container-gols {
         text-align: center;
     }
@@ -123,5 +133,17 @@ section#newsLetter{
 
     .player {
         width: 100%; 
+    }
+
+    .error {
+        font-size: 1.25vw;
+    }
+
+    .newsletter-title {
+        font-size: 1.45rem; 
+    }
+
+    .newsletter-subtitle {
+        font-size: 1rem;
     }
 }
