@@ -8,6 +8,15 @@ $(document).ready(function() {
         const message = $("#registerMessage");
         const toast = new bootstrap.Toast(message);
         toast.show();
+
+        inputName = $("#name");
+        inputName.val("");
+
+        inputEmail = $("#email");
+        inputEmail.val("");
+
+        inputTel = $("#telephone");
+        inputTel.val("");
     }
     
 
