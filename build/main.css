@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #fff;
+}
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: rgb(30, 50, 1);
+}
+header #menu-navegacao .nav-item a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: rgb(30, 50, 1);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+header #menu-navegacao .nav-link.active {
+  background-color: rgb(30, 50, 1);
+  color: #fff;
+}
+
+section#transferencias {
+  background-color: rgb(30, 50, 1);
+}
+section#transferencias .detalhes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  border: none;
+  color: black;
+}
+
+section#gols .player {
+  aspect-ratio: 16/9;
+  width: 40vw;
+}
+
+@media (min-width: 240px) and (max-width: 767px) {
+  #gols #container-gols {
+    text-align: center;
+  }
+  #gols #container-gols .div-gol h3, #gols #container-gols .div-gol p {
+    text-align: left;
+  }
+  #gols #container-gols .div-gol h3 .player, #gols #container-gols .div-gol p .player {
+    width: 100%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  section#gols #container-gols {
+    text-align: center;
+  }
+  section#gols #container-gols .div-gol h3, section#gols #container-gols .div-gol p {
+    text-align: left;
+  }
+  section#gols #container-gols .div-gol h3 .player, section#gols #container-gols .div-gol p .player {
+    width: 100%;
+  }
+}
+section#newsLetter {
+  background-image: linear-gradient(to bottom, white, rgba(33, 37, 41, 0.2470588235));
+}
+section#newsLetter .newsletter-title {
+  font-size: 2rem;
+}
+section#newsLetter .newsletter-subtitle {
+  font-size: 1.25rem;
+}
+section#newsLetter span.bar {
+  background-color: black;
+  width: 60%;
+  height: 3px;
+  border-radius: 12px;
+}
+section#newsLetter #cadastro h4 {
+  font-weight: 600;
+}
+section#newsLetter #cadastro form .error {
+  font-size: 1vw;
+}
+
+@media (min-width: 240px) and (max-width: 767px) {
+  .newsletter-title {
+    font-size: 6vw !important;
+  }
+  .newsletter-subtitle {
+    font-size: 1rem;
+  }
+  #cadastro form .error {
+    font-size: 3.5vw !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .newsletter-title {
+    font-size: 2.75vw !important;
+  }
+  .newsletter-subtitle {
+    font-size: 1rem;
+  }
+}
+section h2 {
+  font-weight: 800;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  #container-gols {
+    text-align: center;
+  }
+  .div-gol h3, .div-gol p {
+    text-align: left;
+  }
+  .player {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+@use '../config/globalVariables.scss';
+
+header {
+    background-color: globalVariables.$colorSecondary;
+
+    h1{
+        font-family: globalVariables.$fontPrincipal;
+        font-weight: 800;
+        color: globalVariables.$colorPrincipal;
+    }
+    
+    #menu-navegacao{
+
+        .nav-item a{
+            font-family: globalVariables.$fontPrincipal;
+            font-weight: 400;
+            color: globalVariables.$colorPrincipal;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .nav-link.active {
+            background-color: globalVariables.$colorPrincipal;
+            color: globalVariables.$colorSecondary;
+        }
+    }
+}
+

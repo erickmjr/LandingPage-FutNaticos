@@ -1,0 +1,68 @@
+@use '../config/globalVariables.scss';
+
+section#newsLetter{
+    background-image: linear-gradient(to bottom, white, #2125293f);
+
+    .newsletter-title {
+        font-size: 2rem;
+    }
+    
+    .newsletter-subtitle {
+        font-size: 1.25rem; 
+    }
+
+    span.bar {
+        background-color: black;
+        width: 60%;
+        height: 3px;
+        border-radius: 12px;
+    }
+
+    #cadastro {
+        h4 {
+            font-weight: 600;
+        }
+        
+        form {
+            .error {
+                font-size: 1vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 240px) and (max-width: globalVariables.$mobile) {
+
+    .newsletter-title {
+        font-size: 6vw !important; 
+    }
+
+    .newsletter-subtitle {
+        font-size: 1rem;
+    }
+
+    #cadastro {
+        form {
+            .error {
+                font-size: 3.5vw !important;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: globalVariables.$tablet) {
+    
+    .newsletter-title {
+        font-size: 2.75vw !important; 
+    }
+
+    .newsletter-subtitle {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+

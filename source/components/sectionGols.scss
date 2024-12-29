@@ -1,0 +1,43 @@
+@use '../config/globalVariables.scss';
+
+section#gols {
+    .player {
+        aspect-ratio: 16 / 9;
+        width: 40vw;
+    }
+}
+
+
+@media (min-width: 240px) and (max-width: globalVariables.$mobile) {
+
+    #gols {
+        #container-gols {
+            text-align: center;
+            .div-gol h3, .div-gol p {
+                text-align: left;
+
+                .player {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: globalVariables.$mobile) and (max-width: globalVariables.$tablet) {
+    
+    section#gols {
+        #container-gols {
+            text-align: center;
+
+            .div-gol h3, .div-gol p {
+                text-align: left;
+
+                .player {
+                    width: 100%; 
+                }
+            }
+        }
+    }
+}

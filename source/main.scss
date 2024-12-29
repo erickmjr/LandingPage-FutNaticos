@@ -1,0 +1,26 @@
+@use 'config/globalVariables.scss';
+@use 'config/reset';
+@use 'components/header';
+@use 'components/sectionBombando';
+@use 'components/sectionTransferencias';
+@use 'components/sectionGols';
+@use 'components/sectionNewsLetter';
+
+section h2{
+    font-weight: 800;
+}
+
+
+@media (min-width: globalVariables.$mobile) and (max-width: globalVariables.$tablet) {
+    #container-gols {
+        text-align: center;
+    }
+
+    .div-gol h3, .div-gol p {
+        text-align: left;
+    }
+
+    .player {
+        width: 100%; 
+    }
+}

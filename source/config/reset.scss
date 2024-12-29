@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@use 'globalVariables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: globalVariables.$fontPrincipal;
+}

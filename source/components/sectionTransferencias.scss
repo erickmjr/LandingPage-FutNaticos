@@ -1,0 +1,15 @@
+@use '../config/globalVariables.scss';
+
+
+section#transferencias {
+    background-color: globalVariables.$colorPrincipal;
+
+    .detalhes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgrey;
+        border: none;
+        color: black;
+    }
+}
